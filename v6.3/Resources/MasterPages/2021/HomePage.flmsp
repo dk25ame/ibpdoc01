@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title></title>
+        <script src="../../Scripts/jira_issue_collector.js">
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-164223934-1">
+        </script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+        <script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-164223934-1');
+	</script>
+		<!-- Version dropdown -->
+		<script type="text/javascript">
+			function gotopage(selval){
+			var value = selval.options[selval.selectedIndex].value;
+			window.location.href=value;
+			}
+		</script>
+    </head>
+    <body>
+		<div style=" text-align: right; border-radius: 4px; color:white; font-size: 9pt; background: linear-gradient(0deg, rgba(35,129,195,1) 35%, rgba(2,54,96,1) 100%); margin-bottom: 15px; padding: 4px 12px; ">Documentation Version 
+			<select class="minimal" onchange="gotopage(this)">
+				<option value="">6.3 (current)</option>				
+				<option value="https://documentation.infiniteblue.com/6.2/platform/What's%20New%20in%20Platform%206.2.htm" target="_blank">6.2</option><option value="https://documentation.infiniteblue.com/6.4/platform/What's%20New%20in%20Platform%206.4.htm" target="_blank">6.4</option><option value="https://documentation.infiniteblue.com/platform/What's%20New%20in%20Platform%206.5.htm" target="_blank">6.5</option>
+			</select>
+		</div>	
+        <div>
+            <MadCap:bodyProxy />
+        </div>
+		<div class="home-footer">
+			<p class="footer" style="color: #4d4d4d; text-align: right; vertical-align: middle;">© 2022 <a style="color: #4d4d4d;" href="http://www.infiniteblue.com/">Infinite Blue Platform</a>. All rights reserved.</p>
+		</div>
+    </body>
+</html>
