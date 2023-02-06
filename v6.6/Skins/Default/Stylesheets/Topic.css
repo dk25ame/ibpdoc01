@@ -457,6 +457,11 @@ a.glossaryTerm
 	font-family: 'Arial';
 }
 
+.topicToolbarProxy
+{
+	vertical-align: baseline;
+}
+
 div.MCBreadcrumbsBox_0
 {
 	mc-hyphenate: never;

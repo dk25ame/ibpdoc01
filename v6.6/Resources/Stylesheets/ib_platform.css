@@ -2811,4 +2811,13 @@ select:-moz-focusring
 }
 
 /* Footer End */
+/* Begin BUTTONS for Show/Hide ToC  */
+
+button.toggle-toc-on-button .button-icon,
+button.toggle-toc-off-button .button-icon
+{
+	background-size: 20px !important;
+}
+
+/* End BUTTONS for Show/Hide ToC  */
 

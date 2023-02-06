@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MadCapLog Protocol="2" Description="MadCap Flare 2022 r2 Generated IB Platform User Guide - HTML 2021.fltar" Date="2023-01-31T16:12:58.0614727+05:30">
+<MadCapLog Protocol="2" Description="MadCap Flare 2022 r2 Generated IB Platform User Guide - HTML 2021.fltar" Date="2023-02-06T17:14:20.9876761+05:30">
     <Messages>Compiling target IB Platform User Guide - HTML 2021...
 Removing previously generated content...
 Loading skin info...
@@ -100,10 +100,10 @@ Image "ztu1525686426976.jpg" regenerated for "" medium: platform\ztu152568642697
 Image "custom_sidebar_1.png" regenerated for "" medium: Resources\Images\custom_sidebar_1.png
 Processing CSS: Resources\Stylesheets\ib-landing-2022.css...
 Processing CSS: Resources\Stylesheets\ib_platform.css...
-Missing linked source file: C:\Work\Platform_User_Guide\6.7\Platform User Guide\Content\Resources\Images\arrow-right.png
-Missing linked source file: C:\Work\Platform_User_Guide\6.7\Platform User Guide\Content\Resources\Images\arrow-down.png
-Missing linked source file: C:\Work\Platform_User_Guide\6.7\Platform User Guide\Content\Images\icons\note.png
-Missing linked source file: C:\Work\Platform_User_Guide\6.7\Platform User Guide\Content\Images\icons\example.png
+Missing linked source file: C:\Work\Platform_User_Guide\6.7 - Test\Platform User Guide\Content\Resources\Images\arrow-right.png
+Missing linked source file: C:\Work\Platform_User_Guide\6.7 - Test\Platform User Guide\Content\Resources\Images\arrow-down.png
+Missing linked source file: C:\Work\Platform_User_Guide\6.7 - Test\Platform User Guide\Content\Images\icons\note.png
+Missing linked source file: C:\Work\Platform_User_Guide\6.7 - Test\Platform User Guide\Content\Images\icons\example.png
 Processing CSS: Resources\TableStyles\ib-table.css...
 Processing CSS: Resources\TableStyles\white-borders.css...
 Generating output files...
@@ -111,7 +111,7 @@ Processing topic: Welcome.htm...
 Applying template page HomePage.flmsp...
 Generated Welcome.htm
 Processing topic: platform\Introduction to Infinite Blue Platform.htm...
-Missing linked source file: C:\Work\Platform_User_Guide\6.7\Platform User Guide\Content\IB QST\Default.htm
+Missing linked source file: C:\Work\Platform_User_Guide\6.7 - Test\Platform User Guide\Content\IB QST\Default.htm
 Applying template page MasterPage.flmsp...
 Generated platform\Introduction to Infinite Blue Platform.htm
 Processing topic: Fast-Track\Fast Track Home.htm...
@@ -4297,17 +4297,17 @@ Generated Skins\Default\Stylesheets\Topic.micro-content.css
 Generated Default.htm
 Saving result set...
 Ignored Compiler Warnings: 9201
-Output generated in 18 minute(s) and 38 second(s).
+Output generated in 21 minute(s) and 0 second(s).
 
 Done
 Saving log to "C:\Users\DilipRout\Desktop\Madcap Test Output\HTML\Output\IB Platform User Guide - HTML 2021\IB Platform User Guide - HTML 2021.mclog"
 </Messages>
     <Warnings>
-        <LogEntry File="../../../Content/Resources/Stylesheets/ib_platform.css" Message="Missing linked source file: C:\Work\Platform_User_Guide\6.7\Platform User Guide\Content\Resources\Images\arrow-right.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="IB Platform User Guide - HTML 2021" ErrorID="10001" />
-        <LogEntry File="../../../Content/Resources/Stylesheets/ib_platform.css" Message="Missing linked source file: C:\Work\Platform_User_Guide\6.7\Platform User Guide\Content\Resources\Images\arrow-down.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="IB Platform User Guide - HTML 2021" ErrorID="10001" />
-        <LogEntry File="../../../Content/Resources/Stylesheets/ib_platform.css" Message="Missing linked source file: C:\Work\Platform_User_Guide\6.7\Platform User Guide\Content\Images\icons\note.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="IB Platform User Guide - HTML 2021" ErrorID="10001" />
-        <LogEntry File="../../../Content/Resources/Stylesheets/ib_platform.css" Message="Missing linked source file: C:\Work\Platform_User_Guide\6.7\Platform User Guide\Content\Images\icons\example.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="IB Platform User Guide - HTML 2021" ErrorID="10001" />
-        <LogEntry File="../../../Content/platform/Introduction to Infinite Blue Platform.htm" Message="Missing linked source file: C:\Work\Platform_User_Guide\6.7\Platform User Guide\Content\IB QST\Default.htm&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="IB Platform User Guide - HTML 2021" ErrorID="10001" />
+        <LogEntry File="../../../Content/Resources/Stylesheets/ib_platform.css" Message="Missing linked source file: C:\Work\Platform_User_Guide\6.7 - Test\Platform User Guide\Content\Resources\Images\arrow-right.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="IB Platform User Guide - HTML 2021" ErrorID="10001" />
+        <LogEntry File="../../../Content/Resources/Stylesheets/ib_platform.css" Message="Missing linked source file: C:\Work\Platform_User_Guide\6.7 - Test\Platform User Guide\Content\Resources\Images\arrow-down.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="IB Platform User Guide - HTML 2021" ErrorID="10001" />
+        <LogEntry File="../../../Content/Resources/Stylesheets/ib_platform.css" Message="Missing linked source file: C:\Work\Platform_User_Guide\6.7 - Test\Platform User Guide\Content\Images\icons\note.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="IB Platform User Guide - HTML 2021" ErrorID="10001" />
+        <LogEntry File="../../../Content/Resources/Stylesheets/ib_platform.css" Message="Missing linked source file: C:\Work\Platform_User_Guide\6.7 - Test\Platform User Guide\Content\Images\icons\example.png&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="IB Platform User Guide - HTML 2021" ErrorID="10001" />
+        <LogEntry File="../../../Content/platform/Introduction to Infinite Blue Platform.htm" Message="Missing linked source file: C:\Work\Platform_User_Guide\6.7 - Test\Platform User Guide\Content\IB QST\Default.htm&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="IB Platform User Guide - HTML 2021" ErrorID="10001" />
         <LogEntry File="../../../Content/release-history/release-4.0-3.html" Message="Topic contains invalid XHTML.&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="IB Platform User Guide - HTML 2021" ErrorID="20058" />
         <LogEntry File="../../../Content/release-history/release-4.2-3.html" Message="The telerik-reTable-4 ID has been used more than once in a document.&#xA;" LineIndex="-1" CharIndex="-1" Target="IB Platform User Guide - HTML 2021" ErrorID="10156" />
         <LogEntry File="../../../Content/Resources/Additional Files/RESTv2.html" Message="Topic contains invalid XHTML.&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="IB Platform User Guide - HTML 2021" ErrorID="20058" />
