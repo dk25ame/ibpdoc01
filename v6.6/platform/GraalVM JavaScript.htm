@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="concept _Skins_Side_Nav_2022_3" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Adding business logic " data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="concept _Skins_Side_Nav_2023_feb" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="utf-8" />
@@ -34,12 +34,12 @@
 
 .button.previous-topic-button
 {
-	-pie-background: linear-gradient(#ffffff, #ececec);
+	-pie-background: linear-gradient(transparent, transparent);
 }
 
 .button.print-button
 {
-	-pie-background: linear-gradient(#ffffff, #ececec);
+	-pie-background: linear-gradient(transparent, transparent);
 }
 
 .button.toggle-toc-on-button
@@ -54,7 +54,7 @@
 
 .button.next-topic-button
 {
-	-pie-background: linear-gradient(#ffffff, #ececec);
+	-pie-background: linear-gradient(transparent, transparent);
 }
 
 .needs-pie
@@ -223,18 +223,14 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="nocontent">
-                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
-                                        </div>
-                                    </div>
                                     <div class="home-container">
-                                        <div role="main" id="mc-main-content">
+                                        <div class="topic-body" role="main" id="mc-main-content">
                                             <h1 class="concepttitle">GraalVM JavaScript <span class="beta">Beta</span></h1>
                                             <h2>Introduction</h2>
                                             <p>Platform uses ‘Rhino’ (Mozilla) JavaScript Engine (JS Engine) to run JavaScript inside the Platform. Rhino engine has certain limitations; it does not support the java script features - promises and await. Therefore, we have evaluated other JavaScript engines and identified Graal JS (by GraalVM) as the successor for Rhino Engine. Graal JS is fully compatible with the latest ECMA script 2020 specification. Its performance is better than Rhino.</p>
                                             <p>For instance, the example below shows how promises can be created with the async-await functionality. Rhino engine does not support it, however, Graal JS does support it.</p>
                                             <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
-                                                <div class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code><span style="color: #333333; font-weight: bold; ">var</span> menuPicklist = rbv_api.getPicklist(<span style="color: #dd1144; ">"XYZHotel"</span>, <span style="color: #dd1144; ">"Item"</span>, <span style="color: #008080; ">null</span>);<br /><span style="color: #333333; font-weight: bold; ">var</span> menu = rbv_api.jsonToString(menuPicklist);<br /><span style="color: #999988; font-style: italic; ">// The following function returns a promise that resolves if the customer</span><br /><span style="color: #999988; font-style: italic; ">// orders something from the menu:</span><br /><span style="color: #333333; font-weight: bold; ">function</span> <span style="color: #990000; font-weight: bold; ">order_food</span> (order) {<br />&#160;&#160;&#160;&#160;<span style="color: #333333; font-weight: bold; ">let</span> promise = <span style="color: #333333; font-weight: bold; ">new</span> <span style="color: #0086b3; ">Promise</span>((resolve, reject) =&gt; {<br />&#160;&#160;&#160;&#160;<span style="color: #333333; font-weight: bold; ">if</span>(menu.includes(order)) {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;resolve();<br />&#160;&#160;&#160;&#160;}<span style="color: #333333; font-weight: bold; ">else</span> {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;reject(<span style="color: #dd1144; ">'This item is not on the menu.'</span>);<br />&#160;&#160;}<br />});<br />&#160;&#160;&#160;&#160;<span style="color: #333333; font-weight: bold; ">return</span> promise;<br />}<br /><span style="color: #999988; font-style: italic; ">// The following function returns a promise that resolves if the customer</span><br /><span style="color: #999988; font-style: italic; ">// pays 20 or more for the food:</span><br /><span style="color: #333333; font-weight: bold; ">function</span> <span style="color: #990000; font-weight: bold; ">make_payment</span> (payment) {<br />&#160;&#160;&#160;&#160;<span style="color: #333333; font-weight: bold; ">let</span> promise = <span style="color: #333333; font-weight: bold; ">new</span> <span style="color: #0086b3; ">Promise</span>((resolve, reject) =&gt; {<br />&#160;&#160;&#160;&#160;<span style="color: #333333; font-weight: bold; ">if</span>(payment &gt;= <span style="color: #008080; ">20</span>) {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;resolve();<br />&#160;&#160;&#160;&#160;}<span style="color: #333333; font-weight: bold; ">else</span> {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;reject(<span style="color: #dd1144; ">'Your order costs 20.'</span>);<br />&#160;&#160;}<br />});<br />&#160;&#160;&#160;&#160;<span style="color: #333333; font-weight: bold; ">return</span> promise;<br />}<br /><span style="color: #999988; font-style: italic; ">// await can only be used inside an async function</span><br /><span style="color: #333333; font-weight: bold; ">async</span> <span style="color: #333333; font-weight: bold; ">function</span> <span style="color: #990000; font-weight: bold; ">eat</span>(order, payment){<br />&#160;&#160;&#160;&#160;<span style="color: #999988; font-style: italic; ">// waiting for the promises to resolve</span><br />&#160;&#160;&#160;&#160;<span style="color: #333333; font-weight: bold; ">try</span>{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #333333; font-weight: bold; ">await</span> order_food(order);<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;(<span style="color: #dd1144; ">"Order received by the customer."</span>);<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rbv_api.println(<span style="color: #dd1144; ">"Collect payment."</span>);<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #333333; font-weight: bold; ">await</span> make_payment(payment);<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rbv_api.println(<span style="color: #dd1144; ">"Payment received."</span>);<br />&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;<span style="color: #999988; font-style: italic; ">// Catching errors or rejected promises</span><br />&#160;&#160;&#160;&#160;<span style="color: #333333; font-weight: bold; ">catch</span> (error){<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rbv_api.println(error);<br />&#160;&#160;&#160;&#160;}<br />}<br /><span style="color: #999988; font-style: italic; ">// Customer places his/her order and specifies the amount to pay</span><br /><span style="color: #999988; font-style: italic; ">// Play around with these parameters to fully understand what is going on.</span><br />eat(<span style="color: #dd1144; ">"Pizza"</span>, <span style="color: #008080; ">10</span>);<br /></code></pre>
+                                                <div class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>var menuPicklist = rbv_api.getPicklist("XYZHotel", "Item", null);<br />var menu = rbv_api.jsonToString(menuPicklist);<br />// The following function returns a promise that resolves if the customer<br />// orders something from the menu:<br />function order_food (order) {<br />&#160;&#160;&#160;&#160;let promise = new Promise((resolve, reject) =&gt; {<br />&#160;&#160;&#160;&#160;if(menu.includes(order)) {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;resolve();<br />&#160;&#160;&#160;&#160;}else {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;reject('This item is not on the menu.');<br />&#160;&#160;}<br />});<br />&#160;&#160;&#160;&#160;return promise;<br />}<br />// The following function returns a promise that resolves if the customer<br />// pays 20 or more for the food:<br />function make_payment (payment) {<br />&#160;&#160;&#160;&#160;let promise = new Promise((resolve, reject) =&gt; {<br />&#160;&#160;&#160;&#160;if(payment &gt;= 20) {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;resolve();<br />&#160;&#160;&#160;&#160;}else {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;reject('Your order costs 20.');<br />&#160;&#160;}<br />});<br />&#160;&#160;&#160;&#160;return promise;<br />}<br />// await can only be used inside an async function<br />async function eat(order, payment){<br />&#160;&#160;&#160;&#160;// waiting for the promises to resolve<br />&#160;&#160;&#160;&#160;try{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;await order_food(order);<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;("Order received by the customer.");<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rbv_api.println("Collect payment.");<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;await make_payment(payment);<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rbv_api.println("Payment received.");<br />&#160;&#160;&#160;&#160;}<br />&#160;&#160;&#160;&#160;// Catching errors or rejected promises<br />&#160;&#160;&#160;&#160;catch (error){<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;rbv_api.println(error);<br />&#160;&#160;&#160;&#160;}<br />}<br />// Customer places his/her order and specifies the amount to pay<br />// Play around with these parameters to fully understand what is going on.<br />eat("Pizza", 10);<br /></code></pre>
                                                 </div>
                                             </div>
                                             <h2>Enabling Graal JS</h2>
@@ -253,13 +249,11 @@
                                             </ul>
                                             <p>In conjunction with the above shared property, a new tenant level property, <code>Switch To Graal JS</code> has been added to switch JS engine selection. This tenant property is shown only when the above shared property is checked.</p>
                                             <p>If this checkbox is left unchecked, then the default value for this property is considered as FALSE, and Rhino JS engine is selected by default. A Tenant Administrator should select this checkbox to enable Graal JS runtime at tenant level.</p>
-                                            <p>
-                                                <img src="../img/graal JS 1.png" style="width: 915px;height: 432px;" alt="" />
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailHover" href="../img/graal JS 1.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="1913" data-mc-height="907" src="../img/graal JS 1_thumb_432_0.png" style="width: 915px;height: 432px;" alt="" tabindex="" /></a>
                                             </p>
                                             <p>Graal JS (Community Edition) does not support setting a time limit for context. To work around setting the max time for java script execution, a new shared property, <code>MaxJSStatements</code> has been introduced in the <b><a href="Shared Properties.htm#MaxJSStatements">Limits -&gt; Triggers</a></b> section to control the statement limit. The default value for this property is 10000. For more information, see <a href="Shared Properties.htm">Shared Properties</a>.</p>
                                             <p>In formula debug, java script engine selection has been added to enable debug the formula using either Rhino or Graal JS. Whenever the java script engine selection changes, the formula is debugged against the selected JS engine.</p>
-                                            <p>
-                                                <img src="../img/graal JS 3.png" style="width: 861px;height: 478px;" alt="" />
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailHover" href="../img/graal JS 3.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="1537" data-mc-height="856" src="../img/graal JS 3_thumb_478_0.png" style="width: 861px;height: 478px;" alt="" tabindex="" /></a>
                                             </p>
                                             <h2>Invoking an external java class using Graal JS</h2>
                                             <p>The procedure to invoke an external java class in Platform using Graal JS is as follows:</p>
@@ -273,14 +267,14 @@
                                                         <li>
                                                             <p>In the <b>Shared Properties</b> tab, add <code>org.test.sample.helloworld</code> to the <b>CustomClassFilter</b> text field.</p>
                                                             <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
-                                                                <div class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>package org.test.sample;<br />public <span style="color: #333333; font-weight: bold; ">class</span> <span style="color: #990000; font-weight: bold; ">helloworld</span> {<br />&#160;&#160;&#160;public <span style="color: #333333; font-weight: bold; ">static</span> <span style="color: #333333; font-weight: bold; ">void</span> main(<span style="color: #0086b3; ">String</span>[] args) {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #999988; font-style: italic; ">// TODO Auto-generated method stub</span><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;helloworld hw = <span style="color: #333333; font-weight: bold; ">new</span> helloworld();<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;hw.concat(args[<span style="color: #008080; ">0</span>],args[<span style="color: #008080; ">1</span>]);<br />&#160;&#160;&#160;}<br />&#160;&#160;&#160;public <span style="color: #0086b3; ">String</span> concat(<span style="color: #0086b3; ">String</span> a,<span style="color: #0086b3; ">String</span> b)<br />&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;System.out.println(a+b);<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color: #333333; font-weight: bold; ">return</span> a.concat(b);<br />&#160;&#160;&#160;}<br />}</code></pre>
+                                                                <div class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>package org.test.sample;<br />public class helloworld {<br />&#160;&#160;&#160;public static void main(String[] args) {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;// TODO Auto-generated method stub<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;helloworld hw = new helloworld();<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;hw.concat(args[0],args[1]);<br />&#160;&#160;&#160;}<br />&#160;&#160;&#160;public String concat(String a,String b)<br />&#160;&#160;&#160;{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;System.out.println(a+b);<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;return a.concat(b);<br />&#160;&#160;&#160;}<br />}</code></pre>
                                                                 </div>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <p>Log in as a customer, and add the below code in the script editor (For example: Object Script trigger)</p>
                                                             <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
-                                                                <div class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code><span style="color: #333333; font-weight: bold; ">var</span> test = <span style="color: #333333; font-weight: bold; ">new</span> Packages.org.test.sample.helloworld();<br /><span style="color: #333333; font-weight: bold; ">var</span> test2 = test.concat(<span style="color: #dd1144; ">"Hello"</span>,<span style="color: #dd1144; ">"world"</span>);<br />rbv_api.println(test2);</code></pre>
+                                                                <div class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>var test = new Packages.org.test.sample.helloworld();<br />var test2 = test.concat("Hello","world");<br />rbv_api.println(test2);</code></pre>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -362,7 +356,7 @@
                                                     <p>GraalVM JavaScript does not put available Java classes in the JavaScript scope. You have to explicitly load the classes using Java.type(typename).</p>
                                                     <p>Example:</p>
                                                     <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
-                                                        <div class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code><span style="color: #333333; font-weight: bold; ">var</span> HashMap = Java.type(<span style="color: #dd1144; ">'java.util.HashMap'</span>);<br /><span style="color: #333333; font-weight: bold; ">var</span> map = <span style="color: #333333; font-weight: bold; ">new</span> HashMap();<br />map.put(<span style="color: #008080; ">1</span>, <span style="color: #dd1144; ">"a"</span>);<br />map.put(<span style="color: #008080; ">2</span>, <span style="color: #dd1144; ">"b"</span>)<br /><span style="color: #333333; font-weight: bold; ">var</span> mapSize = map.size();<br />rbv_api.println(<span style="color: #dd1144; ">"Map Size "</span> + mapSize);</code></pre>
+                                                        <div class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>var HashMap = Java.type('java.util.HashMap');<br />var map = new HashMap();<br />map.put(1, "a");<br />map.put(2, "b")<br />var mapSize = map.size();<br />rbv_api.println("Map Size " + mapSize);</code></pre>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -375,7 +369,7 @@
                                                     <p>GraalVM JavaScript uses Java strings internally to represent JavaScript strings. This makes it impossible to differentiate/identify if a specific string was created by JavaScript or by Java code. In GraalVM JavaScript, the JavaScript properties take precedence over Java fields or methods.</p>
                                                     <p>Example:</p>
                                                     <div class="codeSnippet"><a class="codeSnippetCopyButton" role="button" href="javascript:void(0);">Copy</a>
-                                                        <div class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code><span style="color: #333333; font-weight: bold; ">var</span> javaString = Java.type(<span style="color: #dd1144; ">'java.lang.String'</span>);<br /><span style="color: #333333; font-weight: bold; ">var</span> strVar = <span style="color: #333333; font-weight: bold; ">new</span> javaString(<span style="color: #dd1144; ">"Welcome to Graal JS"</span>);<br /><span style="color: #333333; font-weight: bold; ">var</span> strLength = strVar.length<br />rbv_api.println(<span style="color: #dd1144; ">"String length: "</span> + strLength);</code></pre>
+                                                        <div class="codeSnippetBody" data-mc-continue="False" data-mc-line-number-start="1" data-mc-use-line-numbers="False"><pre><code>var javaString = Java.type('java.lang.String');<br />var strVar = new javaString("Welcome to Graal JS");<br />var strLength = strVar.length<br />rbv_api.println("String length: " + strLength);</code></pre>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -395,22 +389,12 @@ set "JAVA_OPTS=%JAVA_OPTS% -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX
                                             <div class="note"><b>Note</b>:<ul><li>The performance of <b>GraalVM</b> transcends over <b>Rhino</b> especially in the case of complex or time consuming javascripts.</li><li><p>It is also reported that <b>Rhino</b> utilized a considerable amount time for initial requests while the subsequent requests were performed faster. However, while executing any javascript, <b>GraalVM</b> performs better when the peak time is reached. </p></li><li><p>As <span class="mc-variable IB.ProductName variable">Platform</span> utilizes Stock JDK (OpenJDK11), the <b>GraalVM</b> JavaScript engine performance is fine tuned by using GraalVM compiler.</p></li><li><p> Considerably, there are certain limitations on the features and performance for GraalVM&#160;JavaScript when used with <u>GraalVM Community Edition JVM</u> and <u>OpenStock JDK</u> as compared to the <u>GraalVM Enterprise Edition</u>.</p></li><li><p>Few options in <b>GraalVM</b> JavaScript around performance fine tuning are experimental, hence it is not recommended for any usage on production instance.</p></li></ul></div>
                                         </div>
                                     </div>
-                                    <footer class="footer">
-                                        <table style="width: 100%; border: none; padding: 0px;">
-                                            <tr>
-                                                <td style="border: none; text-align: left; vertical-align: middle;">
-                                                    <div class="icons"><a href="https://www.linkedin.com/company/infiniteblue/" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/linkedin-2--v1.png" class="linkedin-icon" alt="" /></a><a href="https://twitter.com/InfiniteBlueHQ" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/twitter.png" class="twitter-icon" alt="" /></a><a href="https://www.youtube.com/channel/UCRa_FE0f3k9KJrNJyAT39Hg/featured" target="_blank"><img src="https://img.icons8.com/ios-glyphs/25/0572ed/youtube-play.png" class="youtube-icon" alt="" /></a>
-                                                    </div>
-                                                </td>
-                                                <td style="text-align:right; border: none;">
-                                                    <img src="../Resources/Images/Logo.png" alt="" />
-                                                    <p class="company-name" style="text-align: right; padding-left: 1%;">
-							Copyright © 2023 Infinite Blue. All Rights Reserved.
-						</p>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </footer>
+                                    <div class="panel">
+                                        <div class="right-align"><a class="footer1" href="https://www.linkedin.com/company/infiniteblue/" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/linkedin-2--v1.png" alt="Linkedin" /></a><a class="footer1" href="https://twitter.com/InfiniteBlueHQ" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/twitter.png" alt="Twitter" /></a><a class="footer1last" href="https://www.youtube.com/channel/UCRa_FE0f3k9KJrNJyAT39Hg/featured" target="_blank"><img src="https://img.icons8.com/ios-glyphs/25/0572ed/youtube-play.png" alt="YouTube" /></a>
+                                        </div>
+                                        <div class="right-align-2"><a class="footer2" href="https://www.infiniteblue.com" target="_blank">Copyright © 2023 Infinite Blue. All Rights Reserved.</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

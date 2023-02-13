@@ -1159,6 +1159,10 @@ div.central-dropdown-content > a:hover
 
 ._Skins_Topic_Toolbar.mc-component .button.next-topic-button
 {
+	border-left: solid 0px #e1e1e1;
+	border-right: solid 0px #e1e1e1;
+	border-top: solid 0px #e1e1e1;
+	border-bottom: solid 0px #e1e1e1;
 	background-repeat: no-repeat;
 	background-position: center center;
 	-webkit-box-shadow: 0px 0px 0px transparent;
@@ -1166,14 +1170,14 @@ div.central-dropdown-content > a:hover
 	box-shadow: 0px 0px 0px transparent;
 	-webkit-box-shadow: 0px 0px 0px transparent;
 	-moz-box-shadow: 0px 0px 0px transparent;
-	background: #ececec;
-	background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
-	background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
-	background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%);
-	background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%);
-	background: linear-gradient(top, #ffffff 0%,#ececec 100%);
-	-pie-background: linear-gradient(#ffffff, #ececec);
+	background: transparent;
+	background: -moz-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
+	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(top, transparent 0%,transparent 100%);
+	-pie-background: linear-gradient(transparent, transparent);
 }
 
 ._Skins_Topic_Toolbar.mc-component .button.next-topic-button > div
@@ -1183,8 +1187,8 @@ div.central-dropdown-content > a:hover
 
 ._Skins_Topic_Toolbar.mc-component .button.next-topic-button .button-icon
 {
-	background: transparent url('Images/navigate-next.png');
-	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/navigate-next.png');
+	background: transparent url('Images/next.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/next.png');
 }
 
 ._Skins_Topic_Toolbar.mc-component .button.next-topic-button .button-icon-wrapper
@@ -1199,6 +1203,10 @@ div.central-dropdown-content > a:hover
 
 ._Skins_Topic_Toolbar.mc-component .button.previous-topic-button
 {
+	border-left: solid 0px #e1e1e1;
+	border-right: solid 0px #e1e1e1;
+	border-top: solid 0px #e1e1e1;
+	border-bottom: solid 0px #e1e1e1;
 	background-repeat: no-repeat;
 	background-position: center center;
 	-webkit-box-shadow: 0px 0px 0px transparent;
@@ -1206,14 +1214,14 @@ div.central-dropdown-content > a:hover
 	box-shadow: 0px 0px 0px transparent;
 	-webkit-box-shadow: 0px 0px 0px transparent;
 	-moz-box-shadow: 0px 0px 0px transparent;
-	background: #ececec;
-	background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
-	background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
-	background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%);
-	background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%);
-	background: linear-gradient(top, #ffffff 0%,#ececec 100%);
-	-pie-background: linear-gradient(#ffffff, #ececec);
+	background: transparent;
+	background: -moz-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
+	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(top, transparent 0%,transparent 100%);
+	-pie-background: linear-gradient(transparent, transparent);
 }
 
 ._Skins_Topic_Toolbar.mc-component .button.previous-topic-button > div
@@ -1223,8 +1231,8 @@ div.central-dropdown-content > a:hover
 
 ._Skins_Topic_Toolbar.mc-component .button.previous-topic-button .button-icon
 {
-	background: transparent url('Images/navigate-previous.png');
-	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/navigate-previous.png');
+	background: transparent url('Images/previous.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/previous.png');
 }
 
 ._Skins_Topic_Toolbar.mc-component .button.previous-topic-button .button-icon-wrapper
@@ -1239,6 +1247,10 @@ div.central-dropdown-content > a:hover
 
 ._Skins_Topic_Toolbar.mc-component .button.print-button
 {
+	border-left: solid 0px #e1e1e1;
+	border-right: solid 0px #e1e1e1;
+	border-top: solid 0px #e1e1e1;
+	border-bottom: solid 0px #e1e1e1;
 	background-repeat: no-repeat;
 	background-position: center center;
 	-webkit-box-shadow: 0px 0px 0px transparent;
@@ -1246,14 +1258,14 @@ div.central-dropdown-content > a:hover
 	box-shadow: 0px 0px 0px transparent;
 	-webkit-box-shadow: 0px 0px 0px transparent;
 	-moz-box-shadow: 0px 0px 0px transparent;
-	background: #ececec;
-	background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
-	background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
-	background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%);
-	background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%);
-	background: linear-gradient(top, #ffffff 0%,#ececec 100%);
-	-pie-background: linear-gradient(#ffffff, #ececec);
+	background: transparent;
+	background: -moz-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,transparent));
+	background: -webkit-linear-gradient(top, transparent 0%, transparent 100%);
+	background: -o-linear-gradient(top, transparent 0%,transparent 100%);
+	background: -ms-linear-gradient(top, transparent 0%,transparent 100%);
+	background: linear-gradient(top, transparent 0%,transparent 100%);
+	-pie-background: linear-gradient(transparent, transparent);
 }
 
 ._Skins_Topic_Toolbar.mc-component .button.print-button > div
@@ -1263,8 +1275,8 @@ div.central-dropdown-content > a:hover
 
 ._Skins_Topic_Toolbar.mc-component .button.print-button .button-icon
 {
-	background: transparent url('Images/printer.png');
-	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/printer.png');
+	background: transparent url('Images/print.png');
+	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/print.png');
 }
 
 ._Skins_Topic_Toolbar.mc-component .button.print-button .button-icon-wrapper

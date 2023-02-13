@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Side_Nav_2022_3" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Designing a Platform application|Creating and managing objects, fields, and relationships|[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Side_Nav_2023_feb" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Designing a Platform application|Creating and managing objects, fields, and relationships|[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="utf-8" />
@@ -34,12 +34,12 @@
 
 .button.previous-topic-button
 {
-	-pie-background: linear-gradient(#ffffff, #ececec);
+	-pie-background: linear-gradient(transparent, transparent);
 }
 
 .button.print-button
 {
-	-pie-background: linear-gradient(#ffffff, #ececec);
+	-pie-background: linear-gradient(transparent, transparent);
 }
 
 .button.toggle-toc-on-button
@@ -54,7 +54,7 @@
 
 .button.next-topic-button
 {
-	-pie-background: linear-gradient(#ffffff, #ececec);
+	-pie-background: linear-gradient(transparent, transparent);
 }
 
 .needs-pie
@@ -223,11 +223,11 @@
                                         </div>
                                     </div>
                                     <div class="nocontent">
-                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider="/" data-mc-breadcrumbs-count="5" data-mc-toc="True">
                                         </div>
                                     </div>
                                     <div class="home-container">
-                                        <div role="main" id="mc-main-content">
+                                        <div class="topic-body" role="main" id="mc-main-content">
                                             <h1>Migrating an existing object to a dedicated table</h1>
                                             <div class="noteWarning"><b>Warning</b>: This operation logs off all the tenants and users. Therefore, expect a downtime in this migration job. The amount of processing and the time needed to get complete results depends on the number of records to be processed in the current object definition.</div>
                                             <div class="note"><b>Note</b>: To create or delete any dedicated tables, ensure that the database user designated to utilize the <span class="mc-variable IB.ProductName variable">Platform</span> instance has the following privileges granted by the database administrator:	<ul><li><b>Stored Routine Privileges</b> - EXECUTE</li><li><b>Table Privileges</b> - INSERT, SELECT, UPDATE, DELETE</li></ul><p>Likewise, ensure that the same privileges are present for any external tables or remote databases.</p></div>
@@ -244,21 +244,18 @@
                                                 </li>
                                                 <li value="5">
                                                     <p>From the <b>More Actions</b> dropdown list, select <b>Move to Dedicated Table</b>.</p>
-                                                    <p>
-                                                        <img src="../img/Dedicated Tables/land-2.1.png" style="width: 611px;height: 156px;" alt="" />
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailHover" href="../img/Dedicated Tables/land-2.1.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="1401" data-mc-height="376" src="../img/Dedicated Tables/land-2.1_thumb_156_0.png" style="width: 611px;height: 156px;" alt="" tabindex="" /></a>
                                                     </p>
                                                 </li>
                                                 <li value="6">
                                                     <p>On the <b>Move Object to a dedicated table</b> confirmation screen, if the object to be moved contains any duplicated field values of the fields that are marked <b>Unique</b>, then <b>Move</b> option is disabled. In this case, either the data must be fixed or the fields must be unmarked as <b>Unique</b>. These fields can be marked as unique again after the data is fixed.</p>
                                                     <div class="note"><b>Note</b>: URL fields cannot be marked as unique for dedicated objects.</div>
-                                                    <p>
-                                                        <img src="../img/Dedicated Tables/land-2.2.PNG" style="width: 592px;height: 238px;" alt="" />
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailHover" href="../img/Dedicated Tables/land-2.2.PNG" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="1473" data-mc-height="593" src="../img/Dedicated Tables/land-2.2_thumb_238_0.png" style="width: 592px;height: 238px;" alt="" tabindex="" /></a>
                                                     </p>
                                                 </li>
                                                 <li value="7">
                                                     <p>If there are no unique fields or duplicate values, then <b>Move</b> is enabled.</p>
-                                                    <p>
-                                                        <img src="../img/Dedicated Tables/land-2.3.jpg" style="width: 582px;height: 120px;" alt="" />
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailHover" href="../img/Dedicated Tables/land-2.3.jpg" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="1436" data-mc-height="299" src="../img/Dedicated Tables/land-2.3_thumb_120_0.jpg" style="width: 582px;height: 120px;" alt="" tabindex="" /></a>
                                                     </p>
                                                 </li>
                                             </ol>
@@ -269,40 +266,27 @@
                                             <ul>
                                                 <li>
                                                     <p>Click the hyperlink of any fields label in the <b>objectView</b> page.</p>
-                                                    <p>
-                                                        <img src="../img/Dedicated Tables/migrate-dd-tab-2.png" style="width: 621px;height: 120px;" alt="" />
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailHover" href="../img/Dedicated Tables/migrate-dd-tab-2.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="1247" data-mc-height="245" src="../img/Dedicated Tables/migrate-dd-tab-2_thumb_120_0.png" style="width: 621px;height: 120px;" alt="" tabindex="" /></a>
                                                     </p>
                                                 </li>
                                                 <li>
                                                     <p> On the  <b>fieldView</b> page, click <b>Mark Unique</b>from the <b>More actions</b> dropdown list.</p>
-                                                    <p>
-                                                        <img src="../img/Dedicated Tables/migrate-dd-tab-3.png" style="width: 535px;height: 123px;" alt="" />
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailHover" href="../img/Dedicated Tables/migrate-dd-tab-3.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="729" data-mc-height="168" src="../img/Dedicated Tables/migrate-dd-tab-3_thumb_123_0.png" style="width: 535px;height: 123px;" alt="" tabindex="" /></a>
                                                     </p>
                                                 </li>
                                             </ul>
                                             <p> The user is navigated to a page similar to <b>Move object to Dedicated Tables</b>. Any duplicate field values (if found) are displayed from the existing records set. The user can also click <b>Submit</b> and mark the field <b>Unique</b>.</p>
-                                            <p style="text-align: center;">
-                                                <img src="../img/Dedicated Tables/migrate-dd-tab-4.png" style="width: 440px;height: 220px;" alt="" />
+                                            <p style="text-align: center;"><a class="MCPopupThumbnailLink MCPopupThumbnailHover" href="../img/Dedicated Tables/migrate-dd-tab-4.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="684" data-mc-height="342" src="../img/Dedicated Tables/migrate-dd-tab-4_thumb_220_0.png" style="width: 440px;height: 220px;" alt="" tabindex="" /></a>
                                             </p>
                                             <div class="note"><b>Note</b>:<ul><li><p>On a dedicated object definition, provisioning duplicate values over fields marked as unique prompts error directly from database layer at runtime. <span class="mc-variable IB.ProductName variable">Platform</span> no longer pre-validates such values and displays them as page level errors on submitting the <b>Create</b>/<b>Edit</b> form.</p></li><li><p>To list down all the objects of the tenant, navigate to <b>Setup Home</b> -&gt; <b>Application Setup</b> -&gt; <b>Objects</b>. This view can also be filtered to list objects per application. Refer the <b>Data Source</b> column values to verify the database table name for external or dedicated object definitions.</p></li></ul></div>
                                         </div>
                                     </div>
-                                    <footer class="footer">
-                                        <table style="width: 100%; border: none; padding: 0px;">
-                                            <tr>
-                                                <td style="border: none; text-align: left; vertical-align: middle;">
-                                                    <div class="icons"><a href="https://www.linkedin.com/company/infiniteblue/" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/linkedin-2--v1.png" class="linkedin-icon" alt="" /></a><a href="https://twitter.com/InfiniteBlueHQ" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/twitter.png" class="twitter-icon" alt="" /></a><a href="https://www.youtube.com/channel/UCRa_FE0f3k9KJrNJyAT39Hg/featured" target="_blank"><img src="https://img.icons8.com/ios-glyphs/25/0572ed/youtube-play.png" class="youtube-icon" alt="" /></a>
-                                                    </div>
-                                                </td>
-                                                <td style="text-align:right; border: none;">
-                                                    <img src="../Resources/Images/Logo.png" alt="" />
-                                                    <p class="company-name" style="text-align: right; padding-left: 1%;">
-							Copyright © 2023 Infinite Blue. All Rights Reserved.
-						</p>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </footer>
+                                    <div class="panel">
+                                        <div class="right-align"><a class="footer1" href="https://www.linkedin.com/company/infiniteblue/" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/linkedin-2--v1.png" alt="Linkedin" /></a><a class="footer1" href="https://twitter.com/InfiniteBlueHQ" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/twitter.png" alt="Twitter" /></a><a class="footer1last" href="https://www.youtube.com/channel/UCRa_FE0f3k9KJrNJyAT39Hg/featured" target="_blank"><img src="https://img.icons8.com/ios-glyphs/25/0572ed/youtube-play.png" alt="YouTube" /></a>
+                                        </div>
+                                        <div class="right-align-2"><a class="footer2" href="https://www.infiniteblue.com" target="_blank">Copyright © 2023 Infinite Blue. All Rights Reserved.</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

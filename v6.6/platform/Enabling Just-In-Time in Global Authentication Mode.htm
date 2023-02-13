@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Side_Nav_2022_3" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Advanced setup and administration|Installing and administering Private Cloud|Private Cloud security and access control|Supported Methods to Authenticate Users|External authentication|Configuring SAML/ADFS Authentication|[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Side_Nav_2023_feb" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="utf-8" />
@@ -34,12 +34,12 @@
 
 .button.previous-topic-button
 {
-	-pie-background: linear-gradient(#ffffff, #ececec);
+	-pie-background: linear-gradient(transparent, transparent);
 }
 
 .button.print-button
 {
-	-pie-background: linear-gradient(#ffffff, #ececec);
+	-pie-background: linear-gradient(transparent, transparent);
 }
 
 .button.toggle-toc-on-button
@@ -54,7 +54,7 @@
 
 .button.next-topic-button
 {
-	-pie-background: linear-gradient(#ffffff, #ececec);
+	-pie-background: linear-gradient(transparent, transparent);
 }
 
 .needs-pie
@@ -222,47 +222,36 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="nocontent">
-                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
-                                        </div>
-                                    </div>
                                     <div class="home-container">
-                                        <div role="main" id="mc-main-content">
+                                        <div class="topic-body" role="main" id="mc-main-content">
                                             <h1 class="tasktitle">Enabling Just-In-Time in Global Authentication Mode</h1>
                                             <p>To provision <b>Just-In-time</b> on an instance level with Single User Multi Tenant instance <a href="#Configu">enabled</a> or <a href="#Configur">disabled</a>, consider the following steps. Also, ensure <b><a href="Control Panel.htm#enable_JIT_control_panel">Just-In-Time for SAML</a></b> and <b><a href="Control Panel.htm#enable_validate_user_control_panel">Validate User Fields on creation</a></b> options are enabled while creating a new profile.</p>
                                             <h2 class="sectiontitle"><a name="Configu"></a>Configuring Just-In-Time with Single User Multi Tenant instance enabled</h2>
                                             <ol start="1">
                                                 <li value="1">
                                                     <p>From the <a href="Control Panel.htm">Control Panel</a> of the System Console, configure as represented in the following screenshot. Ensure <b>Just-In-Time</b>, <b>Validate User Fields on creation</b> and <b>Single User Multi Tenant</b> are enabled in the Configuration section.</p>
-                                                    <p style="text-align: center;">
-                                                        <img src="../img/Configuring Global Authentication_1_1.png" style="width: 393px;height: 321px;" alt="">
-                                                        </img>
+                                                    <p style="text-align: center;"><a class="MCPopupThumbnailLink MCPopupThumbnailHover" href="../img/Configuring Global Authentication_1_1.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="775" data-mc-height="640" src="../img/Configuring Global Authentication_1_1_thumb_321_0.png" style="width: 393px;height: 321px;" alt="" tabindex="" /></a>
                                                     </p>
                                                 </li>
                                             </ol>
                                             <ol start="2">
                                                 <li value="2">
                                                     <p> Provide the following user field mappings in <b>Attribute Map</b> of the authentication section.</p>
-                                                    <p style="text-align: center;">
-                                                        <img src="../img/Configuring Global Authentication_1.png" style="width: 206px;height: 156px;" alt="">
-                                                        </img>
+                                                    <p style="text-align: center;"><a class="MCPopupThumbnailLink MCPopupThumbnailHover" href="../img/Configuring Global Authentication_1.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="395" data-mc-height="301" src="../img/Configuring Global Authentication_1_thumb_156_0.png" style="width: 206px;height: 156px;" alt="" tabindex="" /></a>
                                                     </p>
                                                 </li>
                                             </ol>
                                             <ol start="3">
                                                 <li value="3">
                                                     <p>Configure the IdP configurations (considered OKTA as an example) as represented in the following screenshot. </p>
-                                                    <p style="text-align: center;">
-                                                        <img src="../img/Configuring Global Authentication_2.png" style="width: 410px;height: 360px;" alt="">
-                                                        </img>
+                                                    <p style="text-align: center;"><a class="MCPopupThumbnailLink MCPopupThumbnailHover" href="../img/Configuring Global Authentication_2.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="985" data-mc-height="866" src="../img/Configuring Global Authentication_2_thumb_360_0.png" style="width: 410px;height: 360px;" alt="" tabindex="" /></a>
                                                     </p>
                                                 </li>
                                             </ol>
                                             <ol start="4">
                                                 <li value="4">
                                                     <p>Ensure the mapped values of Identity Provider (IdP) to the user fields are correct.</p>
-                                                    <p>
-                                                        <img src="../img/Configuring Global Authentication_3.png" style="width: 587px;height: 248px;" alt="" />
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailHover" href="../img/Configuring Global Authentication_3.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="1229" data-mc-height="521" src="../img/Configuring Global Authentication_3_thumb_248_0.png" style="width: 587px;height: 248px;" alt="" tabindex="" /></a>
                                                     </p>
                                                 </li>
                                             </ol>
@@ -270,22 +259,19 @@
                                             <ol start="1">
                                                 <li value="1">
                                                     <p>From the <a href="Control Panel.htm">Control Panel</a> of the System Console, configure as represented in the following screenshot. Ensure <b>Just-In-Time</b> and <b>Validate User Fields on creation</b> is enabled and <b>Single User Multi Tenant</b> option is disabled in the Configuration section.</p>
-                                                    <p style="text-align: center;">
-                                                        <img src="../img/Configuring Global Authentication.png" style="width: 483px;height: 286px;" alt="" />
+                                                    <p style="text-align: center;"><a class="MCPopupThumbnailLink MCPopupThumbnailHover" href="../img/Configuring Global Authentication.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="1139" data-mc-height="680" src="../img/Configuring Global Authentication_thumb_286_0.png" style="width: 483px;height: 286px;" alt="" tabindex="" /></a>
                                                     </p>
                                                 </li>
                                                 <li value="2">
                                                     <p> Provide the following user field mappings in <b>Attribute Map</b> of the authentication section.</p>
-                                                    <p style="text-align: center;">
-                                                        <img src="../img/Configuring Global Authentication_1.png" style="width: 230px;height: 175px;" alt="" />
+                                                    <p style="text-align: center;"><a class="MCPopupThumbnailLink MCPopupThumbnailHover" href="../img/Configuring Global Authentication_1.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="395" data-mc-height="301" src="../img/Configuring Global Authentication_1_thumb_175_0.png" style="width: 230px;height: 175px;" alt="" tabindex="" /></a>
                                                     </p>
                                                 </li>
                                             </ol>
                                             <ol start="3">
                                                 <li value="3">
                                                     <p>Configure the IdP configurations (considered OKTA as an example) as represented in the following screenshot. </p>
-                                                    <p style="text-align: center;">
-                                                        <img src="../img/Configuring Global Authentication_2.png" style="width: 330px;height: 289px;" alt="" />
+                                                    <p style="text-align: center;"><a class="MCPopupThumbnailLink MCPopupThumbnailHover" href="../img/Configuring Global Authentication_2.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="985" data-mc-height="866" src="../img/Configuring Global Authentication_2_thumb_289_0.png" style="width: 330px;height: 289px;" alt="" tabindex="" /></a>
                                                     </p>
                                                 </li>
                                             </ol>
@@ -295,8 +281,7 @@
                                                     <p>Ensure the mapped values of Identity Provider (IdP) to the user fields are correct.</p>
                                                 </li>
                                             </ol>
-                                            <p>
-                                                <img src="../img/Configuring Global Authentication_3.png" style="width: 649px;height: 274px;" alt="" />
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailHover" href="../img/Configuring Global Authentication_3.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="1229" data-mc-height="521" src="../img/Configuring Global Authentication_3_thumb_274_0.png" style="width: 649px;height: 274px;" alt="" tabindex="" /></a>
                                             </p>
                                             <h3>Mandatory Fields</h3>
                                             <p>The following attributes are mandatory while configuring <b>Just-In-Time</b> in global authentication mode apart from the basic mandatory field (<code>loginName</code>)        </p>
@@ -309,22 +294,12 @@
                                                 </li>
                                             </ul> </div>
                                     </div>
-                                    <footer class="footer">
-                                        <table style="width: 100%; border: none; padding: 0px;">
-                                            <tr>
-                                                <td style="border: none; text-align: left; vertical-align: middle;">
-                                                    <div class="icons"><a href="https://www.linkedin.com/company/infiniteblue/" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/linkedin-2--v1.png" class="linkedin-icon" alt="" /></a><a href="https://twitter.com/InfiniteBlueHQ" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/twitter.png" class="twitter-icon" alt="" /></a><a href="https://www.youtube.com/channel/UCRa_FE0f3k9KJrNJyAT39Hg/featured" target="_blank"><img src="https://img.icons8.com/ios-glyphs/25/0572ed/youtube-play.png" class="youtube-icon" alt="" /></a>
-                                                    </div>
-                                                </td>
-                                                <td style="text-align:right; border: none;">
-                                                    <img src="../Resources/Images/Logo.png" alt="" />
-                                                    <p class="company-name" style="text-align: right; padding-left: 1%;">
-							Copyright © 2023 Infinite Blue. All Rights Reserved.
-						</p>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </footer>
+                                    <div class="panel">
+                                        <div class="right-align"><a class="footer1" href="https://www.linkedin.com/company/infiniteblue/" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/linkedin-2--v1.png" alt="Linkedin" /></a><a class="footer1" href="https://twitter.com/InfiniteBlueHQ" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/twitter.png" alt="Twitter" /></a><a class="footer1last" href="https://www.youtube.com/channel/UCRa_FE0f3k9KJrNJyAT39Hg/featured" target="_blank"><img src="https://img.icons8.com/ios-glyphs/25/0572ed/youtube-play.png" alt="YouTube" /></a>
+                                        </div>
+                                        <div class="right-align-2"><a class="footer2" href="https://www.infiniteblue.com" target="_blank">Copyright © 2023 Infinite Blue. All Rights Reserved.</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

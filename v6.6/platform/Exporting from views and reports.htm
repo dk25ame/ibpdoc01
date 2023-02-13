@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="concept _Skins_Side_Nav_2022_3" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="Integrating with outside sources" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="concept _Skins_Side_Nav_2023_feb" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="utf-8" />
@@ -34,12 +34,12 @@
 
 .button.previous-topic-button
 {
-	-pie-background: linear-gradient(#ffffff, #ececec);
+	-pie-background: linear-gradient(transparent, transparent);
 }
 
 .button.print-button
 {
-	-pie-background: linear-gradient(#ffffff, #ececec);
+	-pie-background: linear-gradient(transparent, transparent);
 }
 
 .button.toggle-toc-on-button
@@ -54,7 +54,7 @@
 
 .button.next-topic-button
 {
-	-pie-background: linear-gradient(#ffffff, #ececec);
+	-pie-background: linear-gradient(transparent, transparent);
 }
 
 .needs-pie
@@ -222,20 +222,16 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="nocontent">
-                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
-                                        </div>
-                                    </div>
                                     <div class="home-container">
-                                        <div role="main" id="mc-main-content">
+                                        <div class="topic-body" role="main" id="mc-main-content">
                                             <h1 class="concepttitle">Exporting from views and reports</h1>
                                             <p>Platform provides export capabilities from views and reports. The header part of
    each view component contains links to export the view's records in <span class="uicontrol">XLS</span>, <span class="uicontrol">XLSX</span>, <span class="uicontrol">CVS</span>, a
    spreadsheet in <span class="uicontrol">Google </span>Docs (see <a href="Integrating with Google applications.htm" class="MCXref xref">Integrating with Google applications</a>.) or <span class="uicontrol">PDF</span>. The
-   following screen shows all the export formats available for a view in <span class="mc-variable IB.ProductName variable">Platform</span>: <div class="fig"><p><img src="exporting_from_views_and_reports_1.png" style="width: 298px;height: 253px;" alt="" /></p></div></p>
+   following screen shows all the export formats available for a view in <span class="mc-variable IB.ProductName variable">Platform</span>: <div class="fig"><p><a class="MCPopupThumbnailLink MCPopupThumbnailHover" href="exporting_from_views_and_reports_1.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="372" data-mc-height="320" src="exporting_from_views_and_reports_1_thumb_253_0.png" style="width: 298px;height: 253px;" alt="" tabindex="" /></a></p></div></p>
                                             <p>Likewise, the
    following screen shows all the export formats available for a view in <span class="mc-variable IB.ProductName variable">Platform</span> for all asynchronous exports. </p>
-                                            <p> <img src="../img/async-export.png" style="width: 295px;height: 257px;" alt="" /></p>
+                                            <p> <a class="MCPopupThumbnailLink MCPopupThumbnailHover" href="../img/async-export.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="655" data-mc-height="608" src="../img/async-export_thumb_257_0.png" style="width: 295px;height: 257px;" alt="" tabindex="" /></a></p>
                                             <p>Exports created in this way are limited as defined in the <a href="Shared Properties.htm#MaxExportRows">MaxExportRows</a> shared property due to performance reasons. </p>
                                             <p>You can hide individual export options by adding the following JavaScript code
    to Application custom header section (to apply changes to the entire application).</p>
@@ -248,8 +244,7 @@
                                             <p>If you want to hide all the export options,  use <span class="uicontrol">Hide Export</span> List View
    property from the Page Designer. These options are available only in NewUI.</p>
                                             <div class="fig">
-                                                <p>
-                                                    <img alt="Hide Export" src="bgc1490078114647.jpg" style="width: 517px;height: 547px;" />
+                                                <p><a class="MCPopupThumbnailLink MCPopupThumbnailHover" href="bgc1490078114647.jpg" data-mc-popup-alt="Hide Export"><img class="MCPopupThumbnail img" data-mc-width="971" data-mc-height="1027" src="bgc1490078114647_thumb_547_0.jpg" style="width: 517px;height: 547px;" alt="Hide Export" tabindex="" /></a>
                                                 </p>
                                                 <h2><a name="BJP"></a>Background job processing on exporting records<br /></h2>
                                                 <p><span class="mc-variable IB.CompanyName variable">Infinite Blue</span> <span class="mc-variable IB.ProductName variable">Platform</span> can adequately  direct any time constraint and resource centric jobs to the background in order to process them asynchronously. See <a href="Updating multiple records.htm#Asynchronous_processing">Asynchronous Processing</a> for more information. </p>
@@ -286,8 +281,7 @@
                                                 <h3><a name="List"></a>List View</h3>
                                                 <p>If the records are exported from a list view of any object definition and considering the count of records is above the limit as defined in the <a href="Shared Properties.htm#MaxRecordsForSyncMassUpdate">MaxRecordsForSyncActions</a> shared property, the export job is submitted in the background for asynchronous processing. </p>
                                                 <p>The user is notified with a similar growl as displayed below, confirming the records are being exported in an asynchronous operation. Upon job completion, the user is notified via a <a href="UI Notification Center.htm">UI&#160;notification</a> and an e-mail serving the download link of the exported records.</p>
-                                                <p>
-                                                    <img src="../img/export_views_records_01.png" alt="" />
+                                                <p><a class="MCPopupThumbnailLink MCPopupThumbnailHover" href="../img/export_views_records_01.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="549" data-mc-height="144" src="../img/export_views_records_01_thumb_0_0.png" alt="" tabindex="" /></a>
                                                 </p>
                                                 <p>If the count of records subjected to the export job is under the limit as defined in the <a href="Shared Properties.htm#MaxRecordsForSyncMassUpdate">MaxRecordsForSyncActions</a> shared property, the export job is processed synchronously.</p>
                                                 <h3>Reports</h3>
@@ -295,14 +289,12 @@
                                                     <li>
                                                         <p><a name="Tabular"></a><span class="uicontrol">Tabular Reports</span> - The generate report job behaviour for tabular reports is much similar to any list view record export job. If any tabular report is generated and considering the count of records in the report is above the limit as defined in the <a href="Shared Properties.htm#MaxRecordsForSyncMassUpdate">MaxRecordsForSyncActions</a> shared property, the export job is submitted in the background for asynchronous processing.</p>
                                                         <p>The user is notified with a similar growl as displayed below, confirming the report is being generated in an asynchronous operation. Upon job completion, the user is notified via a <a href="UI Notification Center.htm">UI&#160;notification</a> and an e-mail serving the download link of the generated report.</p>
-                                                        <p>
-                                                            <img src="../img/export_views_records_02.png" alt="" />
+                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailHover" href="../img/export_views_records_02.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="549" data-mc-height="144" src="../img/export_views_records_02_thumb_0_0.png" alt="" tabindex="" /></a>
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p><span class="uicontrol"><a name="Document_Template"></a>Document Template</span> - The document template report generation job involves rendering of the output which may take a considerable amount of time while blocking the interface until the report is generated. Likewise, a dialogue box as displayed below is prompted on submitting a document template report generation job. </p>
-                                                        <p>
-                                                            <img src="../img/export_views_records_03.png" style="width: 432px;height: 199px;" alt="" />
+                                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailHover" href="../img/export_views_records_03.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="675" data-mc-height="311" src="../img/export_views_records_03_thumb_199_0.png" style="width: 432px;height: 199px;" alt="" tabindex="" /></a>
                                                         </p>
                                                         <p>After entering a valid email address, the user can choose to <b>Email this report</b> or <b>Run Now</b> to get the job scheduled asynchronously or synchronously respectively. The accordance of conduct remains similar to <a href="#List">List View</a> &amp;&#160;<a href="#Tabular">Tabular Report</a> jobs.</p>
                                                     </li>
@@ -347,22 +339,12 @@
                                             <div class="note"><b>Note</b>: Increasing the thread count may result in the creation and reservation of <code>10+</code> additional threads per node for the execution of massive data read operations. Adjust the thread count based on the <span class="mc-variable IB.ProductName variable">Platform</span> instance's needs or raise the thread count of <a href="Shared Properties.htm#MaxAlarmThreads" title="MaxAlarmThreads">MaxAlarmThreads</a> shared property.</div>
                                         </div>
                                     </div>
-                                    <footer class="footer">
-                                        <table style="width: 100%; border: none; padding: 0px;">
-                                            <tr>
-                                                <td style="border: none; text-align: left; vertical-align: middle;">
-                                                    <div class="icons"><a href="https://www.linkedin.com/company/infiniteblue/" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/linkedin-2--v1.png" class="linkedin-icon" alt="" /></a><a href="https://twitter.com/InfiniteBlueHQ" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/twitter.png" class="twitter-icon" alt="" /></a><a href="https://www.youtube.com/channel/UCRa_FE0f3k9KJrNJyAT39Hg/featured" target="_blank"><img src="https://img.icons8.com/ios-glyphs/25/0572ed/youtube-play.png" class="youtube-icon" alt="" /></a>
-                                                    </div>
-                                                </td>
-                                                <td style="text-align:right; border: none;">
-                                                    <img src="../Resources/Images/Logo.png" alt="" />
-                                                    <p class="company-name" style="text-align: right; padding-left: 1%;">
-							Copyright © 2023 Infinite Blue. All Rights Reserved.
-						</p>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </footer>
+                                    <div class="panel">
+                                        <div class="right-align"><a class="footer1" href="https://www.linkedin.com/company/infiniteblue/" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/linkedin-2--v1.png" alt="Linkedin" /></a><a class="footer1" href="https://twitter.com/InfiniteBlueHQ" target="_blank"><img src="https://img.icons8.com/ios-filled/25/0572ed/twitter.png" alt="Twitter" /></a><a class="footer1last" href="https://www.youtube.com/channel/UCRa_FE0f3k9KJrNJyAT39Hg/featured" target="_blank"><img src="https://img.icons8.com/ios-glyphs/25/0572ed/youtube-play.png" alt="YouTube" /></a>
+                                        </div>
+                                        <div class="right-align-2"><a class="footer2" href="https://www.infiniteblue.com" target="_blank">Copyright © 2023 Infinite Blue. All Rights Reserved.</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
