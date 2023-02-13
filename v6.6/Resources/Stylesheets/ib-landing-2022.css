@@ -748,6 +748,19 @@ Styles after this point are styles that are for specific mediums. If any additio
 
 /* Buttons & Modals End */
 
+/* Labels */
+
+.new {
+    background-color: green;
+    font-weight: normal;
+    animation: animate 1.5s linear infinite;
+}
+.label {
+    padding: 1px 4px 1px 4px;
+    border-radius: 5px;
+    color: white;
+
+
 /*
 @media only screen and (min-width: 2560px) and (max-width: 3400px)
 
