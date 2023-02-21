@@ -70,6 +70,7 @@ a:active
 body
 {
 	font-family: 'Tenon';
+	font-size: 1em;
 }
 
 h1
@@ -132,11 +133,12 @@ p
 	font-family: 'Tenon';
 	font-style: normal;
 	font-weight: normal;
-	font-size: 14px;
+	font-size: 1em;
 	line-height: 21px;
 	margin-top: 0pt;
 	margin-bottom: 9px;
 	color: #000000;
+	text-align: justify;
 }
 
 ol,
@@ -1295,7 +1297,7 @@ ol > li > p:nth-child(3)
 
 .title-bar-layout a.logo
 {
-	background: url(../Logos/logo-title.svg) left center no-repeat transparent !important;
+	background: url(../Images/WHITE_InfiniteBlue_Horizontal_Logo_30px.png) left center no-repeat transparent !important;
 }
 
 code.version
@@ -1634,7 +1636,7 @@ div.examples
 	padding-right: 10px;
 	margin: 20px 10px 20px 0;
 	letter-spacing: .25px;
-	background-image: url('../../Images/icons/example.png');
+	background-image: url('../Images/icons/example.png');
 	padding-top: 0px;
 	padding-bottom: 0px;
 	background-position: 10px 24px;

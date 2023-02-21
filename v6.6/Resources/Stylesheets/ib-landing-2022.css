@@ -105,11 +105,12 @@ body
 p
 {
 	font-size: 16px;
-    	line-height: 1.5em;
+	line-height: 1.5em;
 	margin-top: 0pt;
 	margin-bottom: 9px;
 	margin-left: 15%;
 	margin-right: 15%;
+	text-align: justify;
 }
 
 /*Removes side navigation from the home page */
@@ -184,7 +185,7 @@ div.topic-hero
 	top: 0;
 	height: auto;
 	padding-bottom: 60px;
-	background-color: #0572ed;
+	background-color: #001649;
 	background-image: url('../Images/ib-topic-hero-2.jpg');
 }
 
@@ -200,6 +201,8 @@ h2
 {
 	font-size: 1.8em;
 	line-height: 100%;
+	color: #001649;
+	font-family: 'Tenon';
 }
 
 h2.home-header
@@ -211,6 +214,8 @@ h2.home-header
 	color: #fff;
 	text-align: center;
 	margin-bottom: 25px;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
 .search,
@@ -670,6 +675,17 @@ Styles after this point are styles that are for specific mediums. If any additio
 	{
 		width: 250px;
 	}
+
+	.modal
+	{
+		width: 85%;
+	}
+
+	.button-container
+	{
+		margin-left: 0%;
+		margin-right: 0%;
+	}
 }
 
 /* Buttons & Modals Start */
@@ -677,8 +693,7 @@ Styles after this point are styles that are for specific mediums. If any additio
 
 .main-content
 {
-	width: 80%;
-	margin: 50px auto;
+	
 }
 
 /* Style for the modal overlay */
@@ -726,6 +741,8 @@ Styles after this point are styles that are for specific mediums. If any additio
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 /* The individual buttons */
@@ -735,18 +752,31 @@ Styles after this point are styles that are for specific mediums. If any additio
 	background-color: #ffffff;
 	border: none;
 	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.26);
-	border-radius: 5px;
+	border-radius: 5%;
 	display: block;
 	width: 30%;
 	margin: 10px;
 	text-align: center;
 	padding: 10px;
-	color: white;
+	color: #001649;
 }
 
 /* Buttons & Modals End */
+/* Labels */
 
-/*
+.new
+{
+	background-color: green;
+	font-weight: normal;
+	animation: animate 1.5s linear infinite;
+}
+
+.label
+{
+	padding: 1px 4px 1px 4px;
+	border-radius: 5px;
+	color: white;
+	/*
 @media only screen and (min-width: 2560px) and (max-width: 3400px)
 
 .max-width
@@ -754,4 +784,5 @@ Styles after this point are styles that are for specific mediums. If any additio
 	max-width: 75%;
 }
 */
+}
 

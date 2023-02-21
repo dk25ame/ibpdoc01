@@ -472,11 +472,12 @@ p.MiniTOC1_0
 	font-family: Tenon;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 14px;
+	font-size: 1em;
 	line-height: 21px;
 	margin-top: 0pt;
 	margin-bottom: 9px;
 	color: #000000;
+	text-align: justify;
 	display: block;
 	margin: 1.12em 0;
 	margin-left: 0pt;
@@ -514,7 +515,7 @@ a.MiniTOC1:link
 	text-align: inherit;
 	mc-leader-format: '.';
 	color: #000000;
-	font-size: 14px;
+	font-size: 1em;
 	font-family: Tenon;
 	font-weight: bold;
 	font-style: normal;

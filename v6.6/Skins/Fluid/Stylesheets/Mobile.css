@@ -1974,16 +1974,8 @@
 
 	._Skins_Side_Nav_2023_feb nav.title-bar
 	{
-		background-repeat: no-repeat;
-		background-position: center top;
-		background: #0572ed;
-		background: -moz-linear-gradient(top, #001649 0%, #0572ed 100%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#001649), color-stop(100%,#0572ed));
-		background: -webkit-linear-gradient(top, #001649 0%, #0572ed 100%);
-		background: -o-linear-gradient(top, #001649 0%,#0572ed 100%);
-		background: -ms-linear-gradient(top, #001649 0%,#0572ed 100%);
-		background: linear-gradient(top, #001649 0%,#0572ed 100%);
-		-pie-background: linear-gradient(#001649, #0572ed);
+		background: transparent url('Images/ib-topic-hero-2.jpg') no-repeat center top;
+		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/ib-topic-hero-2.jpg') no-repeat center top;
 	}
 
 	._Skins_Side_Nav_2023_feb .off-canvas-wrapper-inner nav.title-bar .outer-row
@@ -2296,12 +2288,12 @@
 
 	._Skins_Side_Nav_2023_feb .micro-content-proxy.knowledge .proxy-title
 	{
-		font-family: Arial;
+		font-family: Tenon;
 	}
 
 	._Skins_Side_Nav_2023_feb .micro-content-proxy.knowledge .micro-response
 	{
-		font-family: Arial;
+		font-family: Tenon;
 	}
 
 	._Skins_Side_Nav_2023_feb .micro-content-proxy.knowledge.micro-content-truncated-mode .micro-response
@@ -2311,7 +2303,7 @@
 
 	._Skins_Side_Nav_2023_feb .micro-content-proxy.knowledge .micro-response-title a
 	{
-		font-family: Arial;
+		font-family: Tenon;
 	}
 
 	._Skins_Side_Nav_2023_feb .micro-content-proxy.knowledge .micro-response-title
@@ -2321,7 +2313,7 @@
 
 	._Skins_Side_Nav_2023_feb .micro-content-proxy.knowledge .micro-response-url cite
 	{
-		font-family: Arial;
+		font-family: Tenon;
 	}
 
 	._Skins_Side_Nav_2023_feb .micro-content-proxy.knowledge .micro-response-url
@@ -2554,7 +2546,7 @@
 	._Skins_Side_Nav_2023_feb .search-auto-complete li.auto-result-item a
 	{
 		color: #0572ed;
-		font-family: Arial;
+		font-family: Tenon;
 	}
 
 	._Skins_Side_Nav_2023_feb .search-auto-complete li.auto-result-item
@@ -2710,7 +2702,7 @@
 
 	._Skins_Side_Nav_2023_feb .search-filter-content
 	{
-		top: 3em;
+		top: 2.5em;
 		background-color: #ffffff;
 	}
 

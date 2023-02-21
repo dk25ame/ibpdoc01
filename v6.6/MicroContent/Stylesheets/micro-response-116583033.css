@@ -70,6 +70,7 @@ a[target="_blank"]:after
 .micro-response-116583033
 {
 	font-family: 'Tenon';
+	font-size: 1em;
 }
 
 .micro-response-116583033 h1
@@ -132,11 +133,12 @@ a[target="_blank"]:after
 	font-family: 'Tenon';
 	font-style: normal;
 	font-weight: normal;
-	font-size: 14px;
+	font-size: 1em;
 	line-height: 21px;
 	margin-top: 0pt;
 	margin-bottom: 9px;
 	color: #000000;
+	text-align: justify;
 }
 
 .micro-response-116583033 ol,
@@ -1295,7 +1297,7 @@ ul.menu._Skins_MenuProxy.mc-component > ul > li > a.selected:before
 
 .micro-response-116583033 .title-bar-layout a.logo
 {
-	background: url('../../Resources/Logos/logo-title.svg') left center no-repeat transparent !important;
+	background: url('../../Resources/Images/WHITE_InfiniteBlue_Horizontal_Logo_30px.png') left center no-repeat transparent !important;
 }
 
 .micro-response-116583033 code.version
@@ -1634,7 +1636,7 @@ ul.menu._Skins_MenuProxy.mc-component > ul > li > a.selected:before
 	padding-right: 10px;
 	margin: 20px 10px 20px 0;
 	letter-spacing: .25px;
-	background-image: url('../../Images/icons/example.png');
+	background-image: url('../../Resources/Images/icons/example.png');
 	padding-top: 0px;
 	padding-bottom: 0px;
 	background-position: 10px 24px;
